@@ -1,0 +1,11 @@
+logfile /var/log/ha-log
+logfacility local0 #used to tell heartbeat which log facility to utilize for logging
+keepalive 2 #interval between heartbeat packets currently every 2 secs you could also use 2000ms
+deadtime 5 # timeout before the other server takes over
+ping 192.168.1.19 #address to ping to determine if we are alive
+udpport 694 #port to listen in on for broadcasts made by heartbeat
+bcast eth1 #device to use for broadcasts
+node bart # hostname of one of our two nodes
+node lisa # hostname of other of our two nodes
+auto_failback on # very important or auto failover won't happen
+
