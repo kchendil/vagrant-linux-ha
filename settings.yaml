@@ -1,5 +1,5 @@
 node1_ip: 192.168.1.19
 node2_ip: 192.168.1.21
-virtual_ip: 192.168.1.70
+virtual_ip: 192.168.1.77
 node1_hostname: bart
 node2_hostname: lisa

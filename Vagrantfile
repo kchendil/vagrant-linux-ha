@@ -4,8 +4,8 @@ require 'yaml'
 settings = YAML.load_file 'settings.yaml'
 node1_ip=settings['node1_ip']
 node2_ip=settings['node2_ip']
-node1_hostname=settings['node1_ip']
-node2_hostname=settings['node2_ip']
+node1_hostname=settings['node1_hostname']
+node2_hostname=settings['node2_hostname']
 
 Vagrant.configure("2") do |config|
 
